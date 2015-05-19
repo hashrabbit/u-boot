@@ -12,6 +12,9 @@ config SYS_SOC
 config SYS_CONFIG_NAME
 	default "am335x_evm"
 
+config FDTFILE
+	string "Default fdtfile env setting for this board"
+
 config CONS_INDEX
 	int "UART used for console"
 	range 1 6
