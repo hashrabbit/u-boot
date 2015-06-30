@@ -74,7 +74,7 @@
 	"fdtfile=undefined\0" \
 	"console=ttyO0,115200n8\0" \
 	"mmcdev=0\0" \
-	"mmcargs=setenv bootargs console=${console} boot=/dev/mmcblk${mmcdev}" \
+	"mmcargs=setenv bootargs console=${console} mmcdev=${mmcdev}" \
 		"${optargs}\0" \
 	"bootenv=uEnv.txt\0" \
 	"loadbootenv=load mmc ${mmcdev} ${loadaddr} ${bootenv}\0" \
